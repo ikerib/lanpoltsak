@@ -3,9 +3,9 @@
 {% block title %}Status index{% endblock %}
 
 {% block body %}
-    <h1>Status index</h1>
 
-    <table class="table">
+    <div class="table-responsive">
+        <table class="table table-striped table-sm">
         <thead>
             <tr>
                 <th>Id</th>
@@ -30,6 +30,7 @@
         {% endfor %}
         </tbody>
     </table>
+    </div>
 
     <a href="{{ path('status_new') }}">Create new</a>
 {% endblock %}
