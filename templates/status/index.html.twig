@@ -1,6 +1,14 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Status index{% endblock %}
+{% block title %}Egoerak{% endblock %}
+
+{% block main_header_toolbar %}
+<div class="btn-toolbar mb-2 mb-md-0">
+    <div class="btn-group mr-2">
+        <a href="{{ path('status_new') }}" class="btn btn-sm btn-primary">Berria</a>
+    </div>
+</div>
+{% endblock %}
 
 {% block body %}
 
@@ -32,5 +40,4 @@
     </table>
     </div>
 
-    <a href="{{ path('status_new') }}">Create new</a>
 {% endblock %}
