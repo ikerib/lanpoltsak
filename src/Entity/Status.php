@@ -3,6 +3,7 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\StatusRepository")
@@ -18,6 +19,13 @@ class Status
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\NotBlank(message="Zerbait idatzi behar duzu")
+     * @Assert\Length(
+     *      min = 2,
+     *      max = 255,
+     *      minMessage = "Gutxienez {{ limit }} karaketere",
+     *      maxMessage = "Gehienez {{ limit }} karaktere"
+     * )
      */
     private $name;
 
@@ -37,4 +45,6 @@ class Status
 
         return $this;
     }
+
+  
 }

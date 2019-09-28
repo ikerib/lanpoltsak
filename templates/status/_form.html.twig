@@ -1,4 +1,16 @@
-{{ form_start(form, {'attr': {'id': 'frm'}}) }}
+{{ form_start(form, {'attr': {'id': 'frm','novalidate': 'novalidate'}}) }}
+
+{#    <div class="form-group row">#}
+{#        <label for="staticEmail" class="col-sm-2 col-form-label">{{form_label(form.name)}}</label>#}
+{#        <div class="col-sm-10">#}
+{#            {{ form_widget(form.name) }}#}
+{#        </div>#}
+{#    </div>#}
+
     {{ form_widget(form) }}
-    <button id="formBtnSave" class="btn">{{ button_label|default('Save') }}</button>
+
+    <div style="display: none;">
+        <button id="formBtnSave" class="btn">{{ button_label|default('Save') }}</button>
+    </div>
+
 {{ form_end(form) }}

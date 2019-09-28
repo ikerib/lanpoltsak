@@ -27,6 +27,9 @@ class StatusController extends AbstractController
 
     /**
      * @Route("/new", name="status_new", methods={"GET","POST"})
+     * @param Request $request
+     *
+     * @return Response
      */
     public function new(Request $request): Response
     {
@@ -38,6 +41,8 @@ class StatusController extends AbstractController
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($status);
             $entityManager->flush();
+
+            $this->addFlash('success', 'Ongi gorde da.');
 
             return $this->redirectToRoute('status_index');
         }
