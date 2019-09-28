@@ -1,12 +1,15 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Egoerak{% endblock %}
+{% block title %}{{ "Egoerak" | trans }}{% endblock %}
+
+{% block main_header_title %}{{ "Egoera berria" | trans }}{% endblock %}
+
 
 {% block main_header_toolbar %}
     <div class="btn-toolbar mb-2 mb-md-0">
         <div class="btn-group mr-2">
-            <a href="{{ path('status_index') }}" class="btn btn-sm btn-primary">Zerrenda</a>
-            <a id="btnSave" href="javascript:void(0);" class="btn btn-sm btn-success">Gorde</a>
+            <a href="{{ path('status_index') }}" class="btn btn-sm btn-primary">{{ "Zerrendara itzuli" | trans }}</a>
+            <a id="btnSave" href="javascript:void(0);" class="btn btn-sm btn-success">{{ "Gorde" | trans }}</a>
 
         </div>
     </div>
