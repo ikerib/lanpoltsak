@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b95f0b81-9dea-4443-853c-e9b8c34f4924" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/global.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/StatusController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/StatusController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Status.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Status.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/StatusType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/StatusType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/status/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/status/_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/status/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/status/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/status/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/status/new.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -174,7 +173,7 @@
       <option name="presentableId" value="Default" />
       <updated>1569608766466</updated>
       <workItem from="1569608767816" duration="1567000" />
-      <workItem from="1569667500478" duration="509000" />
+      <workItem from="1569667500478" duration="1156000" />
     </task>
     <servers />
   </component>
