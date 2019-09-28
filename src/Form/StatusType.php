@@ -4,6 +4,7 @@ namespace App\Form;
 
 use App\Entity\Status;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\HiddenType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
@@ -16,6 +17,7 @@ class StatusType extends AbstractType
                 'label' => 'Egoera mota:',
                 'help' => 'Egoera izena (disponible, trabajndo...)'
             ])
+//            ->add('slug',HiddenType::class)
         ;
     }
 

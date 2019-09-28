@@ -29,8 +29,7 @@
                 <td>{{ status.id }}</td>
                 <td>{{ status.name }}</td>
                 <td>
-                    <a href="{{ path('status_show', {'id': status.id}) }}">show</a>
-                    <a href="{{ path('status_edit', {'id': status.id}) }}">edit</a>
+                    <a href="{{ path('status_edit', {'id': status.id}) }}"><i class="fas fa-edit"></i> {{ "Editar" | trans }}</a>
                 </td>
             </tr>
         {% else %}
