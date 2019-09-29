@@ -7,7 +7,7 @@
 {% block main_header_toolbar %}
 <div class="btn-toolbar mb-2 mb-md-0">
     <div class="btn-group mr-2">
-        <a href="{{ path('status_new') }}" class="btn btn-sm btn-primary"><i class="fas fa-plus-square"></i> {{ "Berria" | trans }}</a>
+        <a href="{{ path('status_new') }}" class="btn btn-sm btn-secondary"><i class="fas fa-plus-square"></i> {{ "Berria" | trans }}</a>
     </div>
 </div>
 {% endblock %}
@@ -19,8 +19,8 @@
         <thead>
             <tr>
                 <th>Id</th>
-                <th>Name</th>
-                <th>actions</th>
+                <th>Egoera mota</th>
+                <th>&nbsp;</th>
             </tr>
         </thead>
         <tbody>
@@ -29,12 +29,12 @@
                 <td>{{ status.id }}</td>
                 <td>{{ status.name }}</td>
                 <td>
-                    <a href="{{ path('status_edit', {'id': status.id}) }}"><i class="fas fa-edit"></i> {{ "Editar" | trans }}</a>
+                    <a href="{{ path('status_edit', {'id': status.id}) }}"><i class="fas fa-edit"></i> {{ "Editatu" | trans }}</a>
                 </td>
             </tr>
         {% else %}
             <tr>
-                <td colspan="3">no records found</td>
+                <td colspan="3">{{ "Ez da ezer topatu" | trans }}</td>
             </tr>
         {% endfor %}
         </tbody>

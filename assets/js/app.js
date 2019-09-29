@@ -21,7 +21,10 @@ $(document).ready(function() {
     });
 
     $('#btnSave').on('click', function (  ) {
-        // $(this).next('form')
         $('#formBtnSave').trigger("click");
+    })
+
+    $('#btnRemove').on('click', function (  ) {
+        $('#formBtnRemove').trigger("click");
     })
 });
