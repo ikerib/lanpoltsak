@@ -1,9 +1,8 @@
-{{ form_start(form, {'attr': {'id': 'frm','novalidate': 'novalidate'}}) }}
+{{ form_start(form, {'attr': {'id': 'frm'}}) }}
 
     {{ form_widget(form) }}
 
     <div style="display: none;">
         <button id="formBtnSave" class="btn">{{ button_label|default('Save') }}</button>
     </div>
-
 {{ form_end(form) }}

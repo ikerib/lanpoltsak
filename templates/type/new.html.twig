@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ "Lanpostu motak" | trans }}{% endblock %}
+
+{% block main_header_title %}{{ "Lanpostu motak" | trans }}{% endblock %}
+
+{% block main_header_toolbar %}
+    <div class="btn-toolbar mb-2 mb-md-0">
+        <div class="btn-group mr-2">
+            <a href="{{ path('type_index') }}" class="btn btn-sm btn-secondary"><i class="fas fa-arrow-alt-circle-left"></i> {{ "Zerrendara itzuli" | trans }}</a>
+            <a id="btnSave" href="javascript:void(0);" class="btn btn-sm btn-secondary"><i class="fas fa-save"></i> {{ "Gorde" | trans }}</a>
+
+        </div>
+    </div>
+{% endblock %}
+
+{% block body %}
+
+    {{ include('type/_form.html.twig') }}
+
+{% endblock %}
